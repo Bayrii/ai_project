@@ -1,0 +1,51 @@
+1. price: price of the house
+
+2. rooms: number of rooms
+
+3. area_m2: area of the house in m2
+
+4. land_area_sot: 
+
+5. floor: floor #number
+
+6. has_document: Yes or No
+
+7. address: City, Region
+
+8. temirli: Yes or No
+
+9. qaz: Yes or No
+
+10. su: Yes or No
+
+11. isiq: Yes or No
+
+12. avtodayanacaq: Yes or No
+
+13. telefon: Yes or No
+
+14. internet: Yes or No
+
+15. pvc_pencere: Yes or No
+
+16. balkon: Yes or No
+
+17. kabel_tv: Yes or No
+
+18. lift: Yes or No
+
+19. kombi: Yes or No
+
+20. metbex_mebeli: Yes or No
+
+21. temirsiz: Yes or No
+
+22. merkezi_qizdirici_sistem: Yes or No
+
+23. kondisioner: Yes or No
+
+24. esyali: Yes or No
+
+25. hovuz: Yes or No
+
+26. duzelme: Yes or No

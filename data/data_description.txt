@@ -1,0 +1,6 @@
+6. Attribute Information:
+    1. Number of Bedrooms      
+    2. Number of bathrooms   
+    3. Area
+    4. Zipcode
+    5. Price
