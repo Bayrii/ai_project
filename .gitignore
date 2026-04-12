@@ -1,0 +1,25 @@
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# VS Code local settings
+.vscode/
+
+# Jupyter artifacts
+.ipynb_checkpoints/
+notebooks/__pycache__/
+
+# Generated model artifacts
+models/
+
+# Raw image dataset is large and should be shared outside git (drive/LFS)
+satilir_photos/
+
+# Generated multimodal alignment outputs
+data/multimodal_alignment_report.json
