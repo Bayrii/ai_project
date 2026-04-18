@@ -1,0 +1,19 @@
+{
+  "apartment_clean_rows": 4273,
+  "apartment_raw_rows": 4987,
+  "apartment_feature_engineered_rows": 4273,
+  "apartment_target_rows": 4273,
+  "source_raw_rows": 6183,
+  "raw_to_source_mapped_rows": 4987,
+  "clean_to_raw_mapped_rows": 4273,
+  "clean_to_raw_exact_rows": 4273,
+  "clean_to_raw_fallback_rows": 0,
+  "mapped_with_image_folder": 4268,
+  "linked_coverage_ratio": 0.998829861923707,
+  "unique_house_id": 4268,
+  "duplicate_folder_slug_keys": 0,
+  "outputs": {
+    "apartment_tabular_with_house_id_csv": "E:\\Coding\\ai_project\\data\\apartment\\satilir_properties_apartment_feature_engineered_with_house_id.csv",
+    "apartment_id_price_folder_csv": "E:\\Coding\\ai_project\\data\\apartment\\satilir_apartment_id_price_folder.csv"
+  }
+}

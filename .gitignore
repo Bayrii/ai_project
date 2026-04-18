@@ -15,7 +15,7 @@ env/
 .ipynb_checkpoints/
 notebooks/__pycache__/
 
-# Generated model artifacts
+#models
 models/
 
 # Raw image dataset is large and should be shared outside git (drive/LFS)
@@ -23,3 +23,15 @@ satilir_photos/
 
 # Generated multimodal alignment outputs
 data/multimodal_alignment_report.json
+
+#scripts
+scripts/extract_notebook_figures.py
+scripts/generate_latex.py
+
+#report
+report/
+
+#figures
+figures/
+
+

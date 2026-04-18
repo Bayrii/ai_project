@@ -1,0 +1,24 @@
+{
+  "house_clean_rows": 1173,
+  "house_raw_rows": 1195,
+  "house_feature_engineered_rows": 1173,
+  "house_target_rows": 1173,
+  "source_raw_rows": 6183,
+  "shared_raw_match_columns": 25,
+  "raw_to_source_mapped_rows": 1195,
+  "clean_to_raw_mapped_rows": 1173,
+  "clean_to_raw_exact_rows": 914,
+  "clean_to_raw_group_assignment_rows": 259,
+  "clean_to_raw_group_cost_mean": 147.72163052359713,
+  "clean_to_raw_group_cost_max": 470.841191383375,
+  "mapped_with_image_folder": 1173,
+  "unmatched_house_rows": 0,
+  "linked_coverage_ratio": 1.0,
+  "unique_house_id": 1173,
+  "duplicate_folder_slug_keys": 0,
+  "outputs": {
+    "house_tabular_with_house_id_csv": "E:\\Coding\\ai_project\\data\\house\\satilir_properties_house_feature_engineered_with_house_id.csv",
+    "house_id_price_folder_csv": "E:\\Coding\\ai_project\\data\\house\\satilir_house_id_price_folder.csv"
+  },
+  "unmatched_examples": []
+}
