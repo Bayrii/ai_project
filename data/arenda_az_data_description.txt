@@ -38,14 +38,12 @@
 
 20. metbex_mebeli: Yes or No
 
-21. temirsiz: Yes or No
+21. merkezi_qizdirici_sistem: Yes or No
 
-22. merkezi_qizdirici_sistem: Yes or No
+22. kondisioner: Yes or No
 
-23. kondisioner: Yes or No
+23. esyali: Yes or No
 
-24. esyali: Yes or No
+24. hovuz: Yes or No
 
-25. hovuz: Yes or No
-
-26. duzelme: Yes or No
+25. duzelme: Yes or No
