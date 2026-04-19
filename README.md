@@ -1,94 +1,70 @@
-# AI Project: Real Estate Price Prediction (Arenda.az)
+# AI Project: Real Estate Price Prediction (ML)
 
-This repository contains a full pipeline for real estate price prediction for Azerbaijan listings, including:
+This README documents the machine learning side of the project only.
 
-- data collection and preprocessing notebooks
-- tabular ML models
-- multimodal (tabular + image) models
-- a FastAPI backend for inference
-- a React frontend for interactive predictions
-- report assets and figure generation scripts
+The project predicts listing prices for Azerbaijan real estate using:
 
-## Repository Layout
+- tabular models (structured listing features)
+- multimodal models (tabular + image features)
 
-- `data/` - cleaned, engineered, and target datasets
-- `figures/` - generated figures and index
-- `models/` - trained model artifacts and score history
-- `notebooks/` - end-to-end notebook workflow (cleaning, preprocessing, feature engineering, modeling)
-- `report/` - LaTeX report files
-- `satilir_photos/` - listing photos used by multimodal flow
-- `scrape/` - scraping and merge notebooks
-- `scripts/` - utility scripts (feature/multimodal preparation, figure extraction, LaTeX generation)
-- `src/backend/` - FastAPI inference service
-- `src/frontend/` - React + Vite user interface
+## ML Scope
 
-## Quick Start
+- Data preparation for apartment and house listings
+- Feature engineering and split-specific preprocessing
+- Tabular training/evaluation
+- Multimodal alignment and fusion training
+- Metrics tracking and artifact versioning
 
-## 1) Backend
+## ML Repository Layout
 
-From repository root:
+- `data/` - processed datasets, engineered features, and target exports
+- `models/` - saved tabular/multimodal model artifacts and metric history
+- `notebooks/` - notebook workflow for cleaning, preprocessing, feature engineering, and modeling
+- `scripts/` - dataset assembly and ML utility scripts
+- `scrape/` - scraping and merge notebooks used for upstream dataset creation
+- `satilir_photos/` - listing images for multimodal experiments
+- `figures/` - generated figures for analysis/reporting
+- `report/` - report sources (LaTeX)
+
+## End-to-End ML Workflow
+
+1. Collect and merge listing data and image references.
+2. Clean and normalize raw fields for apartment and house subsets.
+3. Build engineered tabular features.
+4. Train tabular baselines and tuned models.
+5. Align image and tabular records for multimodal subsets.
+6. Train/evaluate multimodal fusion models.
+7. Save artifacts and update score history.
+
+## Running ML Notebooks
+
+Use the notebooks under `notebooks/`, especially split flows under:
+
+- `notebooks/apartment/`
+- `notebooks/house/`
+
+Recommended execution order per split:
+
+1. Data-Cleaning
+2. Data-Preprocessing
+3. Feature-Engineering
+4. Model
+5. Multimodal
+
+## ML Artifacts
+
+Typical outputs written during runs:
+
+- tabular model files under `models/tabular/...`
+- multimodal model files under `models/multimodal/...`
+- latest metrics snapshot in `models/metrics/latest_scores.json`
+- historical metric log in `models/metrics/score_history.csv`
+
+## Environment
+
+- Python is required for notebooks, preprocessing scripts, and model training.
+- Install dependencies from the repository-level `requirements.txt`.
 
 ```bash
-cd src/backend
-.venv/Scripts/python.exe -m uvicorn app.main:app --host 127.0.0.1 --port 8000
+pip install -r requirements.txt
 ```
-
-Health checks:
-
-```bash
-curl http://127.0.0.1:8000/health
-curl http://127.0.0.1:8000/ready
-```
-
-Swagger:
-
-- `http://127.0.0.1:8000/docs`
-
-## 2) Frontend
-
-From repository root:
-
-```bash
-cd src/frontend
-npm install
-npm run dev -- --host 127.0.0.1 --port 5173
-```
-
-UI:
-
-- `http://127.0.0.1:5173`
-
-## Inference Notes
-
-- Tabular and multimodal requests use explicit raw listing fields.
-- Multimodal endpoints require file uploads in the `images` field.
-- For multimodal requests, submit actual image files (`.jpg`, `.jpeg`, `.png`), not string placeholders.
-- `price` is accepted for schema parity and ignored during inference.
-
-## Main API Endpoints
-
-- `GET /health`
-- `GET /ready`
-- `GET /v1/models`
-- `POST /v1/predict/tabular/apartment`
-- `POST /v1/predict/tabular/house`
-- `POST /v1/predict/multimodal/apartment`
-- `POST /v1/predict/multimodal/house`
-
-## Development Workflow
-
-Typical modeling flow:
-
-1. scrape and merge raw listing data
-2. clean and preprocess tabular data
-3. engineer features
-4. train and evaluate tabular models
-5. build multimodal inputs and train multimodal fusion model
-6. serve inference through backend and frontend
-
-## Requirements
-
-- Python environment for backend and notebooks
-- Node.js and npm for frontend
-
-If npm is missing on Windows, install Node.js LTS and reopen terminal.
