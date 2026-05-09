@@ -48,7 +48,7 @@ Recommended execution order per split:
 1. Data-Cleaning
 2. Data-Preprocessing
 3. Feature-Engineering
-4. Model
+4. Model (tabular/image)
 5. Multimodal
 
 ## ML Artifacts
